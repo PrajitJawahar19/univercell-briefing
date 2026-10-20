@@ -3,7 +3,8 @@
 A 16-slide board briefing on **UniverCell Holding GmbH** (Flintbek, Germany) and the
 global battery industry, written for an Indian audience. All money is shown in rupees.
 
-**Open `index.html` in any browser.** No build step, no dependencies, no internet needed.
+**[Open the deck](https://prajitjawahar19.github.io/univercell-briefing/)**, or open `index.html`
+from a local copy. No build step, no dependencies, and it works offline.
 
 | | |
 |---|---|
