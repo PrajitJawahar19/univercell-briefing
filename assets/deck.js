@@ -8,8 +8,12 @@ const slides = [...document.querySelectorAll('.slide')];
 const TOTAL = slides.length;
 let cur = 0, notesOpen = false;
 
-/* --- fit the 1280 x 720 stage into whatever screen it lands on ----------- */
+/* --- Below 900px the deck reflows into a scrolling document, so the stage
+       is not scaled and slide-at-a-time navigation is switched off. ------- */
+const isSmall = () => matchMedia('(max-width: 900px)').matches;
+
 function fit() {
+  if (isSmall()) { stage.style.transform = 'none'; return; }
   const s = Math.min(innerWidth / 1280, innerHeight / 720);
   stage.style.transform = 'scale(' + s + ')';
 }
@@ -35,13 +39,20 @@ slides.forEach((s, n) => {
 
 function go(n) {
   cur = Math.max(0, Math.min(TOTAL - 1, n));
+  if (isSmall()) {                       // every slide is already on screen
+    slides[cur].scrollIntoView({ behavior: 'smooth', block: 'start' });
+    location.hash = 's' + (cur + 1);
+    return;
+  }
   slides.forEach((s, k) => s.classList.toggle('on', k === cur));
   [...ticks.children].forEach((t, k) => {
     t.className = 'tick' + (k < cur ? ' done' : '') + (k === cur ? ' now' : '');
   });
-  [...grid.querySelectorAll('.gcard')].forEach((c, k) => c.classList.toggle('cur', k === cur));
-  document.getElementById('count').textContent = (cur + 1) + ' / ' + TOTAL;
-  document.getElementById('where').textContent = slides[cur].dataset.where || '';
+  if (grid) [...grid.querySelectorAll('.gcard')].forEach((c, k) => c.classList.toggle('cur', k === cur));
+  const count = document.getElementById('count');
+  if (count) count.textContent = (cur + 1) + ' / ' + TOTAL;
+  const where = document.getElementById('where');
+  if (where) where.textContent = slides[cur].dataset.where || '';
   renderNotes();
   hideTip();
   location.hash = 's' + (cur + 1);
@@ -95,6 +106,7 @@ addEventListener('keydown', e => {
 });
 
 addEventListener('click', e => {
+  if (isSmall()) return;                 // tapping must not hijack scrolling
   if (e.target.closest('button, a, .tick, svg, #notes, #grid, #tools, #help')) return;
   if (document.getElementById('grid').classList.contains('on')) return;
   go(e.clientX < innerWidth * 0.25 ? cur - 1 : cur + 1);
@@ -103,6 +115,7 @@ addEventListener('click', e => {
 let tx = 0, ty = 0;
 addEventListener('touchstart', e => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, { passive: true });
 addEventListener('touchend', e => {
+  if (isSmall()) return;                 // swiping must not fight the scroll
   const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
   if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy)) go(cur + (dx < 0 ? 1 : -1));
 }, { passive: true });
@@ -236,7 +249,12 @@ $('t_dry').innerHTML = D.dryCoating.ranking.map(r => `<tr${r.me ? ' class="me"' 
 
 /* --- start ---------------------------------------------------------------- */
 const start = parseInt((location.hash.match(/^#s(\d+)$/) || [])[1] || '1', 10) - 1;
-go(isNaN(start) ? 0 : start);
+if (isSmall()) {
+  slides.forEach(s => s.classList.add('on'));   // show the whole document
+  if (start > 0) slides[start].scrollIntoView();
+} else {
+  go(isNaN(start) ? 0 : start);
+}
 setTimeout(() => {
   const h = document.getElementById('hint');
   if (h) { h.style.opacity = '0'; setTimeout(() => h.remove(), 600); }

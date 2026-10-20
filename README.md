@@ -31,10 +31,21 @@ assets/
   notes.js                       speaker notes, one entry per slide
   deck.css                       the design system
 downloads/
+  UniverCell_Briefing_Deck.pdf   the slides as a PDF, best for reading on a phone
   UniverCell_Briefing_Deck.pptx  an editable PowerPoint of the same sixteen slides
   UniverCell_Speaker_Notes.pdf   printable notes, one slide per page
-  UniverCell_Research_Report.pdf the long version, with every source numbered
 ```
+
+## On a phone
+
+The slides are built on a fixed 16:9 stage, which is right for a laptop or a
+projector and wrong for a phone held upright. Below 900px the deck drops the
+stage and reflows into a single scrolling document: one section per slide, every
+column stacked, charts full width, and wide tables scrolling inside their own
+card. Tap and swipe navigation switch off so they do not fight the scroll.
+
+For reading rather than presenting, `downloads/UniverCell_Briefing_Deck.pdf`
+opens natively on any phone with no app required.
 
 ## Changing a number
 
