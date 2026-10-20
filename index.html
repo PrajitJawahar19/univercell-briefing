@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UniverCell Holding GmbH — a briefing</title>
+<meta name="description" content="What UniverCell is, what the battery industry around it is doing, and what an Indian company should take from both.">
+<link rel="stylesheet" href="assets/deck.css">
+</head>
+<body>
+
+<div id="viewport"><div id="stage">
+
+  <div id="tools">
+    <button id="bGrid"  aria-pressed="false" title="All slides (G)">Slides</button>
+    <button id="bNotes" aria-pressed="false" title="Speaker notes (N)">Notes</button>
+    <button id="bTheme" title="Light or dark (T)">Theme</button>
+    <button id="bHelp"  title="Keyboard shortcuts (?)">?</button>
+  </div>
+
+  <!-- ========================= 01 cover ========================= -->
+  <section class="slide field-copper" data-title="UniverCell, in one briefing" data-where="Cover">
+    <div class="body" style="justify-content:center;gap:0">
+      <p class="r" style="font-size:18px;font-weight:700;margin:0 0 26px">A briefing for the board</p>
+      <h1 class="r">The battery company that chose not to be big</h1>
+      <p class="lede r" style="max-width:52ch;font-size:23px;color:var(--ink-2)">
+        UniverCell Holding GmbH of Flintbek, Germany. What it is, what the industry
+        around it is doing, and what we should take from both.</p>
+      <div class="r" style="margin-top:56px">
+        <div style="font-size:14px;color:var(--ink-2)">Figures current to</div>
+        <div style="font-size:21px;font-weight:700;margin-top:6px">20 October 2026</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= 02 the five numbers ========================= -->
+  <section class="slide" data-title="The five numbers that matter" data-where="The short version">
+    <h2 class="r narrow">The five numbers that matter</h2>
+    <div class="body" style="justify-content:space-between">
+      <div class="row r" style="grid-template-columns:repeat(5,1fr);gap:30px">
+        <div class="fig sm red"><span class="v">10 Nov</span><span class="k">China's deadline</span>
+          <span class="n">China's export licence rules on cells, graphite and battery machinery are
+            <b>paused, not cancelled</b>. The pause runs out on this date.</span></div>
+        <div class="fig sm blue"><span class="v">98<small>%</small></span><span class="k">Made in China</span>
+          <span class="n">of the world's anode material. Also 90% of cathode. The chokehold is on
+            <b>processing</b>, not on mines.</span></div>
+        <div class="fig sm"><span class="v">₹1.6<small> lakh cr</small></span><span class="k">Burnt in Europe</span>
+          <span class="n">across four battery firms since 2023. Seven of UniverCell's nine European
+            rivals are dead or shrinking.</span></div>
+        <div class="fig sm ink"><span class="v">116<small>×</small></span><span class="k">The company's own gap</span>
+          <span class="n">between the capacity it advertises and what its cell line actually makes
+            today. We do that sum on slide 9.</span></div>
+        <div class="fig sm green"><span class="v">₹38,900<small> cr</small></span><span class="k">Our import bill</span>
+          <span class="n">India spent this on battery cells in 2025. Up 44% in a year,
+            <b>93% of it from China</b>.</span></div>
+      </div>
+      <div class="note r">
+        <h4>The whole argument, in three sentences</h4>
+        <p>Europe tried to beat China on <b>size</b> and lost about ₹1.6 lakh crore trying. The few
+          European battery firms still alive did the opposite: they stayed <b>small and specialised</b>,
+          and sold where price per unit is not the deciding factor. UniverCell is the clearest live
+          test of that second idea, and its own numbers do not yet match its story.</p>
+      </div>
+    </div>
+    <div class="src">Sources: China's MOFCOM notice 58 of 2025 · IEA critical minerals outlook · company filings and
+      insolvency records · UniverCell's Series B announcement of 4 March 2026, plus our own arithmetic · UN Comtrade.</div>
+  </section>
+
+  <!-- ========================= 03 two curves ========================= -->
+  <section class="slide" data-title="Demand is rising, prices are falling" data-where="Part one: the world">
+    <h2 class="r">More batteries, less money per battery</h2>
+    <div class="body">
+      <div class="row fill r" style="grid-template-columns:1fr 1fr 1fr">
+        <div class="card">
+          <p class="ctitle">How much battery the world fits to vehicles each year<br><span class="sub">gigawatt-hours. The 2030 bar is the IEA's outlook, not an actual</span></p>
+          <div id="c_demand"></div>
+        </div>
+        <div class="card">
+          <p class="ctitle">What a battery pack costs, and how fast that is falling<br><span class="sub">thousand rupees per kWh. The 2026 bar is a forecast</span></p>
+          <div id="c_price"></div>
+        </div>
+        <div class="card bare" style="justify-content:space-between">
+          <div class="fig sm green"><span class="v">₹6,700</span><span class="k">per kWh, storage packs</span>
+            <span class="n">Down 45% in a single year. The cheapest cell on the market is
+              <b>₹3,400 per kWh</b>.</span></div>
+          <div class="fig sm blue"><span class="v">40<small>%</small></span><span class="k">of the world's factories sit idle</span>
+            <span class="n">But CATL ran at <b>97%</b>. The idle lines are the weak ones.</span></div>
+        </div>
+      </div>
+      <div class="note r">
+        <h4>Why this matters to us</h4>
+        <p>No one outside China wins a price fight on this curve. The only places left to make money are
+          the ones where <b>the customer is not buying on price per kWh</b>.</p>
+      </div>
+    </div>
+    <div class="src">IEA Global EV Outlook 2026 · Benchmark Mineral Intelligence · BloombergNEF price survey, December 2025;
+      2026 is their forecast. Converted at ₹95.24 to the dollar, held constant across years so the trend is comparable.</div>
+  </section>
+
+  <!-- ========================= 04 the chokepoint ========================= -->
+  <section class="slide" data-title="China's grip is on processing" data-where="Part one: the world">
+    <h2 class="r">Buying a lithium mine does not solve this</h2>
+    <p class="lede r">China's hold is not on the ground. It is on every step between the mine and the
+      finished cell, which is the part nobody else built.</p>
+    <div class="body">
+      <div class="row fill r" style="grid-template-columns:1.25fr .9fr">
+        <div class="card">
+          <p class="ctitle">China's share of world capacity, step by step<br><span class="sub">percent of global capacity, 2024 to 2025</span></p>
+          <div id="c_choke"></div>
+        </div>
+        <div class="card bare">
+          <ul class="p sm">
+            <li><b>It got worse, not better.</b> China's grip on refining rose from 82% to 86% between
+              2020 and 2024, straight through the West's whole effort to break it.</li>
+            <li><b>2035 looks much the same.</b> The IEA expects China to still hold over 60% of refined
+              lithium and about 80% of battery-grade graphite.</li>
+            <li><b>The licence is the real risk.</b> Since July 2025 China requires a government licence
+              to export cathode technology, and that rule was never paused.</li>
+            <li><b>What it means for us.</b> Every cell plant being built in India today runs on Chinese
+              technology, Chinese machines and Chinese engineers. All three sit inside these rules.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="src">IEA Global Critical Minerals Outlook and Global EV Outlook 2026 · China's MOFCOM and MOST technology
+      export rules of 15 July 2025 · MOFCOM notice 58 of 2025, in force 8 November 2025, paused until 10 November 2026.
+      A further extension has been reported but we could not find the official notice confirming it.</div>
+  </section>
+
+  <!-- ========================= 05 trade ========================= -->
+  <section class="slide" data-title="Who sells, and who buys" data-where="Part one: the world">
+    <h2 class="r">One seller, and a new set of buyers</h2>
+    <div class="body">
+      <div class="row fill r" style="grid-template-columns:1.05fr .95fr">
+        <div class="card">
+          <p class="ctitle">The world's biggest battery importers<br><span class="sub">rupees of lithium-ion cells bought in the twelve months to end-2025</span></p>
+          <div id="c_imp"></div>
+          <p class="ctitle" style="margin:24px 0 12px">Where China's ₹7.3 lakh crore of battery exports went in 2025<br><span class="sub">share of China's total export value</span></p>
+          <div id="c_dest"></div>
+        </div>
+        <div class="card bare" style="gap:26px">
+          <div class="row" style="grid-template-columns:1fr 1fr;gap:26px">
+            <div class="fig sm"><span class="v">66<small>%</small></span><span class="k">of all battery imports worldwide</span>
+              <span class="n">come from China, up 5 points in one year. By weight it is 78%.</span></div>
+            <div class="fig sm blue"><span class="v">#1</span><span class="k">Germany is now the top buyer</span>
+              <span class="n">₹2.7 lakh crore of imports. It passed the United States in May 2025.</span></div>
+          </div>
+          <ul class="p sm">
+            <li><b>America is leaving the market, not winning it.</b> Chinese exports to the US fell by a
+              fifth, and China's share of US imports dropped from 65% to 46%.</li>
+            <li><b>That volume did not vanish. It came our way.</b> Europe, Australia, India and Vietnam
+              absorbed it. India was the fastest-growing destination of all, up 73% in a year.</li>
+            <li><b>Prices are falling, not demand.</b> Across the big importers, tonnage rose 14% while
+              the money spent stayed flat.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="src">UN Comtrade mirror data via GTAIC, rolling twelve months, product code 850760 · China Passenger Car
+      Association. 2025 Comtrade reporting is still incomplete, so the shares are firmer than the totals.</div>
+  </section>
+
+  <!-- ========================= 06 Europe ========================= -->
+  <section class="slide" data-title="Europe promised twice what it will build" data-where="Part two: Europe tried">
+    <h2 class="r">Europe will build half of what it promised</h2>
+    <div class="body">
+      <div class="row fill r" style="grid-template-columns:1.1fr .9fr">
+        <div class="card">
+          <p class="ctitle">What Europe promised for 2030, and what it will actually make<br><span class="sub">gigawatt-hours a year. Solid bar is the low end of each estimate, the pale block the high end</span></p>
+          <div id="c_eu"></div>
+        </div>
+        <div class="card bare" style="gap:26px">
+          <div class="row" style="grid-template-columns:1fr 1fr;gap:26px">
+            <div class="fig sm red"><span class="v">700<small>+ GWh</small></span><span class="k">Cancelled or delayed</span>
+              <span class="n">About 240 GWh of it in Germany alone, roughly a quarter of everything announced.</span></div>
+            <div class="fig sm blue"><span class="v">98<small>%</small></span><span class="k">Owned by Asian firms</span>
+              <span class="n">of the battery capacity sitting on European soil. Europe hosts the factories and owns almost none.</span></div>
+          </div>
+          <ul class="p sm">
+            <li><b>Europe is not short of announcements.</b> It is short of factories that actually get
+              finished, approved by customers and run properly.</li>
+            <li><b>Demand and realistic supply broadly meet.</b> The shortfall is against the promise,
+              not against the need.</li>
+            <li><b>Deloitte puts a price on the miss:</b> about ₹1.1 lakh crore of profit given up over
+              four years.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="src">Fraunhofer ISI risk model for the European battery ramp-up, data to December 2024 ·
+      Transport &amp; Environment, October 2026 · Deloitte via electrive, August 2026.</div>
+  </section>
+
+  <!-- ========================= 07 the graveyard ========================= -->
+  <section class="slide" data-title="Seven of its nine rivals are gone" data-where="Part two: Europe tried">
+    <h2 class="r small">Seven of its nine European rivals are gone</h2>
+    <div class="body">
+      <div class="row fill r" style="grid-template-columns:1.4fr .85fr">
+        <div class="card">
+          <table class="t">
+            <thead><tr><th>Company</th><th>Where</th><th>What happened</th><th class="n">Money gone</th></tr></thead>
+            <tbody id="t_fail"></tbody>
+          </table>
+        </div>
+        <div class="card bare" style="gap:24px">
+          <div class="note">
+            <h4>The warning</h4>
+            <p>Morrow's plant was judged <b>far too small to supply a big carmaker</b>. UniverCell's
+              target is the same size. Its entire defence is that it is <b>not trying to supply a
+              carmaker</b>.</p>
+          </div>
+          <div>
+            <p class="ctitle">What the survivors have in common</p>
+            <ul class="p sm">
+              <li><b>A carmaker owns them.</b> Every European survivor has one. Every independent firm
+                that tried to sell on the open market has failed.</li>
+              <li><b>They built to orders, not to ambition.</b> Northvolt built for 16 GWh and shipped 1.</li>
+              <li><b>They refused the price fight.</b> Anyone competing on cost against Chinese cells lost.</li>
+            </ul>
+            <p style="font-size:16px;line-height:1.45;margin:18px 0 0">UniverCell passes the second and
+              third tests. <b style="color:var(--crit)">It fails the first. No carmaker owns any part of it.</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="src">Insolvency filings and administrators' statements reported by electrive, Energy-Storage.News,
+      Stuttgarter Zeitung, TechCrunch and Climate Home News, 2023 to 2026. Money-gone figures are what was raised or
+      written off, so they are a floor, not a total.</div>
+  </section>
+
+  <!-- ========================= 08 the company ========================= -->
+  <section class="slide" data-title="What UniverCell actually is" data-where="Part three: the company">
+    <h2 class="r">Ninety-two people in northern Germany</h2>
+    <div class="body">
+      <div class="row fill r" style="grid-template-columns:.82fr 1fr 1fr">
+        <div class="card quiet">
+          <p class="ctitle">The basics</p>
+          <table class="t" style="font-size:14.5px">
+            <tbody>
+              <tr><td>Started</td><td>May 2019</td></tr>
+              <tr><td>Where</td><td>Flintbek, near Kiel</td></tr>
+              <tr><td>Founders</td><td>Dr Stefan Permien and Marius Strack</td></tr>
+              <tr><td>People</td><td class="n">92</td></tr>
+              <tr><td>Balance sheet</td><td class="n">₹132 crore</td></tr>
+              <tr><td>Sales</td><td>"double-digit millions" of euros</td></tr>
+              <tr><td>Patents</td><td class="n">1, still pending</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card">
+          <p class="ctitle">What they sell</p>
+          <ul class="p sm">
+            <li><b>Coated electrode foil.</b> This is the real business. Over 1,000 tested recipes, and
+              the 1,000th customer order was delivered in January 2026.</li>
+            <li><b>Custom pouch cells</b> for customers who need an odd shape.</li>
+            <li><b>Their own 21700 cylindrical cell.</b> 6 amp-hours, fast charging, over 750 cycles.
+              Production started June 2026.</li>
+            <li><b>Sodium-ion</b>, with a Karlsruhe partner, on a ₹155 crore government-funded project.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <p class="ctitle">Who backs them</p>
+          <ul class="p sm">
+            <li><b>₹320 crore raised in March 2026</b> from Germany's state deep-tech fund, two
+              industrial partners and the EU's innovation fund.</li>
+            <li><b>A ₹26 crore EU grant</b> for the cylindrical cell programme.</li>
+            <li><b>No carmaker and no big customer owns a share.</b> This is the single biggest
+              structural worry.</li>
+            <li><b>The founders are the team from CustomCells</b>, the German specialist that collapsed
+              in 2025. They are named on four of its patents. <span class="tag cu">same people, second attempt</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="src">German company register and published accounts · UniverCell's Series B announcement of 4 March 2026 ·
+      company website and its technical presentation hosted by NASA · EU grant record 101161461 · patent searches.
+      They did not buy CustomCells or its assets; the link is the two founders.</div>
+  </section>
+
+  <!-- ========================= 09 the arithmetic ========================= -->
+  <section class="slide field-dark" data-title="The sum nobody else has done" data-where="Part three: the company">
+    <h2 class="r">They advertise 1,500. They make 13.</h2>
+    <p class="lede r">Both numbers are theirs, and they measure two different things.</p>
+    <div class="body">
+      <div class="row fill r" style="grid-template-columns:1.1fr .9fr">
+        <div class="card">
+          <p class="ctitle">What they claim, and what they make, in a year<br>
+            <span class="sub">megawatt-hours, drawn to scale, using their own 21.6 Wh per cell</span></p>
+          <div id="c_arith"></div>
+        </div>
+        <div class="card bare" style="gap:22px">
+          <div class="note">
+            <h4>The sum, so you can check it</h4>
+            <p>50,000 cells a month × 12 × 21.6 Wh = <b>13 MWh a year</b>, which is <b>0.86%</b> of the
+              1,500 they advertise. Filling 1,500 would take <b>5.8 million cells a month</b>.</p>
+          </div>
+          <ul class="p sm">
+            <li><b>So what is the 1,500?</b> It is their
+              <b>electrode coating line</b>, not their cell line. That business is
+              real and already earns money selling coated foil to other firms.</li>
+            <li><b>So this is an electrode factory with a small cell line
+              attached</b>, about seven times smaller than CATL's German plant. Their 2027 plan needs
+              roughly 100 times today's output, in eighteen months, on ₹320 crore. Ask them how.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="src">Our calculation, using only figures the company itself has published. The 21.6 Wh per cell basis is
+      checked against their own roadmap, which converts 180 million cells to about 4 GWh. Their press release contains
+      both "40 million cells a year" and "1.5 GWh", and those two numbers disagree with each other by 1.7 times.</div>
+  </section>
+
+  <!-- ========================= 10 the technology ========================= -->
+  <section class="slide" data-title="The one real advantage" data-where="Part three: the company">
+    <h2 class="r">A real advantage that runs out in 2028</h2>
+    <p class="lede r">Electrodes are normally a wet paste, baked dry in a very long oven. Dry coating
+      skips the liquid entirely.</p>
+    <div class="body">
+      <div class="row fill r" style="grid-template-columns:1.05fr .95fr">
+        <div class="card">
+          <p class="ctitle">Who is actually running dry coating today<br><span class="sub">ranked by what is operating at industrial scale, October 2026</span></p>
+          <table class="t" style="font-size:14.5px"><tbody id="t_dry"></tbody></table>
+        </div>
+        <div class="card bare" style="gap:24px">
+          <div class="row" style="grid-template-columns:1fr 1fr;gap:26px">
+            <div class="fig sm"><span class="v">27<small>%</small></span><span class="k">less energy per cell</span>
+              <span class="n">Their own measured number. The 30 to 40% quoted in the press is only the coating step.</span></div>
+            <div class="fig sm blue"><span class="v">17-30<small>%</small></span><span class="k">possible cost saving</span>
+              <span class="n">Industry estimate, plus a much smaller factory building.</span></div>
+          </div>
+          <ul class="p sm">
+            <li><b>The lead is about three years, not ten.</b> LG starts mass production in 2028, Samsung
+              is testing, and Fraunhofer will license the method to anyone who asks.</li>
+            <li><b>Be careful with their headline spec.</b> Their cell claims 330 Wh/kg against a rival's
+              284, but the entire difference is <b>12 grams of casing</b>. Energy per cell is actually
+              2.4% lower.</li>
+            <li><b>Someone else's problem is our opening.</b> Dürr and LiCAP have a proven European
+              dry-coating system and no test site since Cellforce shut. They are openly seeking a partner.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="src">Tesla's Q4 2025 shareholder letter · Dr Stefan Permien speaking at Battery Power Europe, April 2026 ·
+      LG and Samsung SDI company guidance · Fraunhofer IWS · Dürr public statements, 2026. The ranking is by what is
+      actually running at industrial scale, not by research progress.</div>
+  </section>
+
+  <!-- ========================= 11 value chain + BCG ========================= -->
+  <section class="slide" data-title="Where the money sits" data-where="Part four: the structure">
+    <h2 class="r">Where the money sits in this industry</h2>
+    <div class="body">
+      <div class="row fill r" style="grid-template-columns:1.15fr .85fr">
+        <div class="card">
+          <p class="ctitle">Where the value is created, from mine to finished pack<br>
+            <span class="sub">share of total value added across the chain, our estimate</span></p>
+          <div id="c_chain"></div>
+          <table class="t" style="margin-top:20px;font-size:14.5px">
+            <thead><tr><th>Step</th><th>Who controls it</th><th>Do they play?</th></tr></thead>
+            <tbody>
+              <tr><td>Mining</td><td>Australia, Chile, Indonesia</td><td>No</td></tr>
+              <tr><td>Refining</td><td>China, 74 to 94%</td><td>No</td></tr>
+              <tr class="me"><td>Coating electrodes</td><td>Fragmented, almost nobody sells it</td><td>Yes, this is their business</td></tr>
+              <tr class="me"><td>Making cells</td><td>China, about 85%</td><td>Yes, but only just started</td></tr>
+              <tr><td>Packs and recycling</td><td>Regional, low barrier</td><td>No</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card">
+          <p class="ctitle">Their four product lines, by growth and by share<br><span class="sub">our read from public information, not company data</span></p>
+          <div id="c_bcg"></div>
+          <ul class="p sm" style="margin-top:18px">
+            <li><b>Electrode foil pays the bills.</b> It is the only line with real customers, real
+              volume, and almost no competition in Europe.</li>
+            <li><b>The cell is the gamble.</b> Fast-growing market, almost no share, and it is spending
+              the money they just raised.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="src">Value split based on Deloitte's work reported by electrive; the split between steps is our estimate.
+      Control shares from the IEA. The four-box view is our assessment from public information, not company data, and
+      share is measured against the European niche each line competes in.</div>
+  </section>
+
+  <!-- ========================= 12 five forces ========================= -->
+  <section class="slide" data-title="Why the niche works" data-where="Part four: the structure">
+    <h2 class="r">A good niche, right next to a bloodbath</h2>
+    <p class="lede r">Same industry, two completely different businesses. We scored the five classic
+      pressures for each. Lower is better.</p>
+    <div class="body">
+      <div class="row fill r" style="grid-template-columns:1fr 1.05fr">
+        <div class="card">
+          <p class="ctitle">How hard each competitive pressure bites, in two different markets<br><span class="sub">scored 1 to 5, where 1 is comfortable and 5 is brutal</span></p>
+          <div id="c_forces"></div>
+          <div id="l_forces"></div>
+        </div>
+        <div class="card bare" style="gap:20px">
+          <ul class="p sm">
+            <li><b>Suppliers are the one real problem, and it is the same in both.</b> China holds 90% of
+              cathode and 98% of anode material, under licence rules. Their sodium-ion work is the only
+              visible hedge.</li>
+            <li><b>Competition eased because the competitors died</b>, not because of anything they did.
+              The real rival is <b>Molicel</b> of Taiwan, not CATL: same size, same cell, same customers,
+              and already signed with two aircraft makers.</li>
+            <li><b>Customers have little power, and that is the whole point.</b> Once a cell is approved
+              into a satellite or a surgical tool, changing supplier means starting approval again.</li>
+            <li><b>Getting in is hard.</b> Money, know-how and years of customer approval, against a track
+              record that now frightens investors away.</li>
+          </ul>
+          <div class="note">
+            <h4>The catch</h4>
+            <p>This only holds while they stay out of cars <b>and out of power tools</b>, where they would
+              meet EVE Energy: one Malaysian plant, <b>680 million cells a year</b>, seventeen times their
+              entire target.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="src">Our scoring, against the evidence set out in the full report. The scores are judgements; the facts
+      underneath them are sourced. EVE Energy's Malaysian capacity from company announcements, February 2026.</div>
+  </section>
+
+  <!-- ========================= 13 SWOT ========================= -->
+  <section class="slide" data-title="Strengths and weaknesses" data-where="Part four: the structure">
+    <h2 class="r">The honest balance sheet</h2>
+    <div class="body">
+      <div class="row fill r" style="grid-template-columns:1fr 1fr;gap:22px">
+        <div class="row" style="grid-template-columns:1fr;gap:22px">
+          <div class="card quad s">
+            <h4>What is genuinely good</h4>
+            <ul class="p xs">
+              <li>Dry coating actually running and selling, one of only three in the world.</li>
+              <li>They make their own anode and cathode, with <b>1,000 proven recipes</b>.</li>
+              <li>A competitive cell on paper: 6 Ah, fast charge, over 750 cycles.</li>
+              <li>Deliberately smaller than the size at which every European rival died.</li>
+            </ul>
+          </div>
+          <div class="card quad o">
+            <h4>What is open to them</h4>
+            <ul class="p xs">
+              <li>Their whole European competitor set vanished in eighteen months.</li>
+              <li><b>Almost nobody in Europe sells electrodes</b>, and new EU rules make a European,
+                carbon-declared electrode a selling point.</li>
+              <li>Defence and space budgets are rising and shut Chinese suppliers out.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" style="grid-template-columns:1fr;gap:22px">
+          <div class="card quad w">
+            <h4>What is genuinely weak</h4>
+            <ul class="p xs">
+              <li>Cell output is <b>under 1%</b> of advertised capacity, and the plan needs 100× growth
+                in eighteen months.</li>
+              <li><b>No quality certificate is published anywhere</b>, which matters because medical and
+                space customers legally require them. Treat those as target markets, not real ones.</li>
+              <li>Not one customer is named publicly. One pending patent.</li>
+              <li>₹320 crore is thin for this plan, with no cushion.</li>
+            </ul>
+          </div>
+          <div class="card quad t">
+            <h4>What could go wrong</h4>
+            <ul class="p xs">
+              <li><b>No carmaker or anchor customer owns a share.</b> Everyone who tried that has failed.</li>
+              <li>CustomCells died when one customer did not pay. We cannot see how concentrated
+                UniverCell is.</li>
+              <li>LG reaches mass production in 2028 and the technology lead closes.</li>
+              <li>They do not qualify for Europe's ₹16,000 crore battery fund: it needs a plant seven
+                times their size.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="src">Every line traces to the full report. "No certificate is published" means we searched the website,
+      every product page, the technical presentation and the funding announcement and found none as of October 2026.
+      It does not mean they hold none.</div>
+  </section>
+
+  <!-- ========================= 14 the rules ========================= -->
+  <section class="slide" data-title="The rules are the moat" data-where="Part four: the structure">
+    <h2 class="r">In this industry the rulebook is the moat</h2>
+    <div class="body">
+      <div class="row fill r" style="grid-template-columns:1.05fr .95fr">
+        <div class="card">
+          <p class="ctitle">What comes into force, and when<br><span class="sub">the rules that bind anyone selling a battery into Europe</span></p>
+          <table class="t pad" style="font-size:14.5px">
+            <tbody>
+              <tr class="me"><td class="n">10 Nov 2026</td><td>China's export licence pause runs out</td><td><span class="tag crit">watch this</span></td></tr>
+              <tr><td class="n">Feb 2026</td><td>EU carbon footprint declaration for industrial batteries</td><td>already in force</td></tr>
+              <tr class="me"><td class="n">Feb 2027</td><td>Every battery sold in the EU needs a digital passport</td><td>a data project, not a form</td></tr>
+              <tr><td class="n">Aug 2027</td><td>Supply chain checks for larger firms</td><td>importers hit hardest</td></tr>
+            </tbody>
+          </table>
+          <div class="note" style="margin-top:auto">
+            <h4>The part that matters for us</h4>
+            <p>These rules bind <b>anyone selling into Europe, wherever the battery was made</b>. For an
+              Asian exporter that is a cost. For a European maker it is a sales argument.</p>
+          </div>
+        </div>
+        <div class="card bare">
+          <p class="ctitle">The wider picture, in plain terms</p>
+          <ul class="p xs">
+            <li><span class="tag good">helps them</span> Europe's new <b>₹16 lakh crore defence fund</b>
+              requires 65% European content, and it is live now.</li>
+            <li><span class="tag crit">hurts them</span> European packs cost <b>56% more</b> than Chinese
+              ones, and German electricity is among the dearest in the developed world.</li>
+            <li><span class="tag good">helps them</span> Medical, space and defence buyers care about
+              where a cell comes from more than what it costs.</li>
+            <li><span class="tag warn">mixed</span> Dry coating is a real lead that closes around 2028.
+              Sodium-ion is both their hedge and a threat.</li>
+            <li><span class="tag good">helps them</span> Solvent-free coating on a wind-powered grid gives
+              them a genuinely low carbon number to declare.</li>
+            <li><span class="tag warn">mixed</span> Europe's battery subsidy fund targets exactly the
+              large-scale strategy that already failed, so they are shut out.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="src">EU Battery Regulation 2023/1542 and its 2025 amendment · Critical Raw Materials Act · European
+      Commission's Battery Booster call text, which requires a 10 GWh minimum · China's MOFCOM notices · BloombergNEF
+      regional price differences. Europe's carbon border tax does not currently cover batteries.</div>
+  </section>
+
+  <!-- ========================= 15 India ========================= -->
+  <section class="slide" data-title="What this is worth to us" data-where="Part five: what we do">
+    <h2 class="r">Four things we could actually do with this</h2>
+    <div class="body">
+      <div class="row fill r" style="grid-template-columns:.88fr 1.12fr">
+        <div class="card">
+          <p class="ctitle">What India spends on imported battery cells each year<br><span class="sub">₹ crore, customs code 850760. Fiscal years to FY23, calendar years after</span></p>
+          <div id="c_india"></div>
+          <div class="row" style="grid-template-columns:1fr 1fr;gap:22px;margin-top:18px">
+            <div class="fig sm green"><span class="v">2.8<small>%</small></span><span class="k">of our own PLI target built</span>
+              <span class="n">1.4 GWh against a 50 GWh goal, and nothing paid out yet.</span></div>
+            <div class="fig sm blue"><span class="v">0<small>%</small></span><span class="k">duty on battery machinery</span>
+              <span class="n">85 machine types, coaters included, duty-free until March 2029.</span></div>
+          </div>
+        </div>
+        <div class="card bare">
+          <ul class="p sm" style="gap:14px">
+            <li><b>1. Buy the method, not the cell design.</b> Chinese cathode technology now needs
+              Beijing's permission to transfer. European dry-coating does not, Dürr and LiCAP want a
+              partner, and the machine lands here duty-free until March 2029.
+              <span class="tag">small spend, 12 to 24 months</span></li>
+            <li><b>2. Sell electrodes, not cells.</b> Coating is where UniverCell actually makes money,
+              and the same gap exists here at bigger scale. A fraction of the cost of a cell plant, and
+              it supplies every cell maker instead of competing with them.
+              <span class="tag">medium spend, 2 to 3 years</span></li>
+            <li><b>3. Serve the customers nobody serves.</b> Indian drone, defence, space and power-tool
+              makers have <b>no domestic source of high-power cylindrical cells at all</b>.
+              <span class="tag">medium spend, 2 to 4 years</span></li>
+            <li><b>4. Buy European distress, carefully.</b> Seven firms are in or near administration and
+              assets are cheap, for a reason. What is worth buying is <b>the team and the recipe
+              library</b>, not the building. <span class="tag crit">high risk</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="src">UN Comtrade via GTAIC and Volza: 2025 imports of ₹38,900 crore, up 44% in value and 75% in volume,
+      93% from China · IEEFA and JMK Research on PLI delivery · CBIC customs notification 27/2026 · China's July 2025
+      cathode technology rule. By 2030 the bill could be ₹1.3 to 2.2 lakh crore depending on demand and price.</div>
+  </section>
+
+  <!-- ========================= 16 the close ========================= -->
+  <section class="slide field-copper" data-title="Where this leaves us" data-where="The close">
+    <h2 class="r narrow">Where this leaves us</h2>
+    <div class="body" style="justify-content:space-between">
+      <div class="r" style="max-width:62ch">
+        <p style="font-size:26px;line-height:1.28;font-weight:700;letter-spacing:-.018em;margin:0">
+          UniverCell is a <b>real electrode business</b> with a genuine process advantage and an
+          <b>unproven cell business</b>, sitting in the one corner of this industry where being small
+          is a strategy rather than a weakness.</p>
+        <p style="font-size:16px;line-height:1.48;margin:16px 0 0;color:var(--ink-2);max-width:78ch">
+          We are not being asked to back them. The useful part is the map: the chokehold is on
+          processing, the cost fight is unwinnable, and the money sits in the step nobody else sells.</p>
+      </div>
+
+      <div class="row r" style="grid-template-columns:repeat(3,1fr);gap:22px">
+        <div class="card">
+          <p class="ctitle">Do this in the next quarter</p>
+          <ul class="p sm">
+            <li><b>Call Dürr and LiCAP.</b> A proven European dry-coating system, no partner, and the
+              machine lands here duty-free until March 2029.</li>
+            <li><b>Size the electrode play.</b> One analyst, four weeks, a real capital number against
+              India's cell pipeline.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <p class="ctitle">Ask UniverCell these, in writing</p>
+          <ul class="p sm">
+            <li><b>Which quality certificates do you hold?</b> None is published, and medical and space
+              work legally requires them.</li>
+            <li><b>Where are the firm orders?</b> CustomCells was killed by one customer not paying.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <p class="ctitle">What would change the answer</p>
+          <ul class="p sm">
+            <li><b>A named anchor customer</b> with contracted volume would upgrade them materially.</li>
+            <li><b>Any slip in the 2027 ramp</b> would downgrade them just as fast.</li>
+            <li><b>China letting the pause lapse</b> in November makes all of this urgent rather than
+              interesting.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="src">Built from company filings, regulator and agency publications and named industry sources.
+      Figures current to 20 October 2026. Every number in this deck is sourced in the companion report.</div>
+  </section>
+
+  <div id="rail">
+    <span class="counter" id="count">1 / 16</span>
+    <div id="ticks"></div>
+    <span class="counter" id="where">Cover</span>
+  </div>
+
+  <div id="grid"><h3>All slides</h3></div>
+  <div id="notes"></div>
+  <div id="help"><div class="hc"><h4>Keyboard</h4><dl>
+    <dt>→ or space</dt><dd>Next slide</dd>
+    <dt>←</dt><dd>Previous slide</dd>
+    <dt>G</dt><dd>See all slides at once</dd>
+    <dt>N</dt><dd>Show the speaker notes</dd>
+    <dt>T</dt><dd>Switch between light and dark</dd>
+    <dt>F</dt><dd>Full screen</dd>
+    <dt>1 to 9</dt><dd>Jump to a slide</dd>
+    <dt>Esc</dt><dd>Close any panel</dd>
+  </dl></div></div>
+
+</div></div>
+
+<div id="hint">Use ← and → to move · G for all slides · N for notes</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/charts.js"></script>
+<script src="assets/notes.js"></script>
+<script src="assets/deck.js"></script>
+</body>
+</html>
