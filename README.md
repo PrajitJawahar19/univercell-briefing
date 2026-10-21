@@ -34,7 +34,7 @@ downloads/
   UniverCell_Briefing_Deck.pdf   the slides as a PDF, best for reading on a phone
   UniverCell_Briefing_Deck.pptx  an editable PowerPoint of the same sixteen slides
   UniverCell_Speaker_Notes.pdf   printable notes, one slide per page
-  UniverCell_Research_Report.pdf the long version: 107 pages, 249 numbered sources
+  UniverCell_Research_Report.pdf the long version: 112 pages, 11 figures, 249 numbered sources
 ```
 
 ## On a phone
