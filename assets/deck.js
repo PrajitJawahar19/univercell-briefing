@@ -131,7 +131,7 @@ document.getElementById('bHelp').onclick = () => document.getElementById('help')
 const $ = id => document.getElementById(id);
 const D = DATA;
 
-/* 03 — how much battery the world uses */
+/* 03. how much battery the world uses */
 columns($('c_demand'), {
   w: 330, h: 212, barW: 40,
   cats: [
@@ -142,7 +142,7 @@ columns($('c_demand'), {
   vFmt: v => v >= 1000 ? (v / 1000).toFixed(1) + ' TWh' : v
 });
 
-/* 03 — what a pack costs, in thousand rupees per kWh */
+/* 03. what a pack costs, in thousand rupees per kWh */
 columns($('c_price'), {
   w: 330, h: 212, barW: 40, color: 'var(--s1)',
   cats: [0, 2, 4, 5, 6].map(i => ({
@@ -154,7 +154,7 @@ columns($('c_price'), {
   vFmt: v => '₹' + v.toFixed(1) + 'k'
 });
 
-/* 04 — China's share, step by step */
+/* 04. China's share, step by step */
 bars($('c_choke'), {
   w: 560, h: 222, labelW: 190, valW: 54, barH: 17, gap: 9, max: 100, unit: '%',
   rows: D.chinaShare.map((r, i) => ({
@@ -162,7 +162,7 @@ bars($('c_choke'), {
   }))
 });
 
-/* 05 — importers, and where China's exports went */
+/* 05. importers, and where China's exports went */
 bars($('c_imp'), {
   w: 520, h: 186, labelW: 152, valW: 118, barH: 23, gap: 14,
   rows: D.importers.map((r, i) => ({
@@ -181,7 +181,7 @@ splitBar($('c_dest'), {
   unit: '', vFmt: v => cr(v * 1e9, 'USD')
 });
 
-/* 06 — what Europe promised against what it will build */
+/* 06. what Europe promised against what it will build */
 rangeColumns($('c_eu'), {
   w: 520, h: 252, yMax: 2400, unit: ' GWh',
   cats: D.europe2030.map((c, i) => ({
@@ -193,7 +193,7 @@ legend($('c_eu'), [
   { label: 'Solid is the low end, the pale block above it is the high end', color: 'var(--s1)' }
 ]);
 
-/* 09 — the capacity arithmetic, drawn to scale */
+/* 09. the capacity arithmetic, drawn to scale */
 bars($('c_arith'), {
   w: 540, h: 206, labelW: 214, valW: 96, barH: 32, gap: 18, max: 1500, unit: ' MWh',
   rows: [
@@ -205,7 +205,7 @@ bars($('c_arith'), {
   vFmt: v => v.toLocaleString('en-IN')
 });
 
-/* 11 — where the value sits, and the four product lines */
+/* 11. where the value sits, and the four product lines */
 splitBar($('c_chain'), { w: 520, bh: 30, parts: D.valueChain });
 map2x2($('c_bcg'), {
   w: 420, h: 226, xLab: 'Their share of that niche', yLab: 'How fast it is growing',
@@ -218,7 +218,7 @@ map2x2($('c_bcg'), {
   ]
 });
 
-/* 12 — the five pressures, niche against commodity */
+/* 12. the five pressures, niche against commodity */
 pairedColumns($('c_forces'), {
   w: 500, h: 254, cats: D.forces.names,
   a: { name: 'This niche', vals: D.forces.niche, color: 'var(--s1)' },
@@ -229,7 +229,7 @@ legend($('l_forces'), [
   { label: 'Mass-market car cells', color: 'var(--s2)', note: 'average ' + D.forces.commodityAvg }
 ]);
 
-/* 15 — what India spends on imported cells */
+/* 15. what India spends on imported cells */
 columns($('c_india'), {
   w: 400, h: 164, barW: 34, color: 'var(--s4)',
   cats: D.indiaImports.labels.map((l, i) => ({

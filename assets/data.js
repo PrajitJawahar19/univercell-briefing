@@ -56,20 +56,21 @@ const DATA = {
   },
 
   /* --- slide 4: China's share of each step ------------------------------ */
-  chinaShare: [
-    { label: 'Anode material',         value: 98, note: 'and 98% of graphitisation' },
-    { label: 'Battery-grade graphite', value: 94, note: 'still about 80% in 2035 on IEA projections' },
-    { label: 'Cathode material',       value: 90 },
-    { label: 'Cell manufacturing',     value: 85, note: 'over 80% of everything made in 2025' },
-    { label: 'Cobalt refining',        value: 76 },
-    { label: 'Lithium refining',       value: 74 },
-    { label: 'Nickel refining',        value: 31 },
-    { label: 'Lithium mining',         value: 16, note: 'the one step China does not hold' }
+  chinaShare: [                                  // IEA; basis stated per row
+    { label: 'Graphite refining',    value: 94, note: 'still about 80% in 2035 on IEA projections' },
+    { label: 'Anode material',       value: 90, note: 'an IEA floor: over 90%' },
+    { label: 'Cathode material',     value: 85 },
+    { label: 'Cell manufacturing',   value: 80, note: 'an IEA floor: over 80% of all cells made in 2025' },
+    { label: 'Cobalt refining',      value: 76 },
+    { label: 'Lithium refining',     value: 75 },
+    { label: 'Nickel refining',      value: 31 },
+    { label: 'Lithium mining',       value: 17, note: 'the one step China does not hold' }
   ],
 
   /* --- slide 5: who buys, who sells ------------------------------------- */
-  importers: [                                     // USD bn, 12 months to end-2025
-    { label: 'Germany',       usd: 28.2, note: 'up 16%, and it passed the United States in May 2025' },
+  importers: [          // USD bn. The windows differ: Germany and the US to Oct 2025,
+                        // Australia to Jan 2026, Czechia and Mexico calendar 2025
+    { label: 'Germany',       usd: 28.2, note: 'up 16%, and ahead of the United States since 2023' },
     { label: 'United States', usd: 22.2, note: 'flat, and China now supplies only 46% of it' },
     { label: 'Australia',     usd: 5.2,  note: 'up 43%' },
     { label: 'Czechia',       usd: 4.6,  note: 'up 24%' },
@@ -100,7 +101,8 @@ const DATA = {
     { co: 'Cellforce',    country: 'Germany', what: "Porsche's cell venture, closed completely in May 2026",            amt: null,  cur: null },
     { co: 'ACC',          country: 'France',  what: 'Two German and Italian plants cancelled, replaced by a CATL deal', amt: null,  cur: null }
   ],
-  capitalDestroyedUsd: 17,   // bn, conservative floor across four named companies
+  capitalDestroyedUsd: 15.8, // bn, the three European cases that disclosed: Northvolt,
+                             // Morrow, Varta. Britishvolt's GBP 4bn was a plan, not capital.
 
   /* --- slides 8 and 9: the company -------------------------------------- */
   company: {
@@ -148,14 +150,19 @@ const DATA = {
 
   /* --- slide 15: India ---------------------------------------------------*/
   indiaImports: {                                   // HS 850760
-    labels: ['FY19', 'FY23', 'CY24', 'CY25', 'to Apr 26'],
-    usd:    [0.3846, 2.8, 2.8389, 4.0836, 4.6279],  // bn
+    labels: ['FY19', 'FY23', 'CY24', 'CY25', 'LTM Apr 26'],
+    usd:    [1.22587, 2.87407, 2.83887, 4.0836, 4.6279],  // bn; FY19 and FY23 are
+    // Tradestat's official HS 85076000 figures. The USD 384.6m that circulates for
+    // FY19 is India's FY2016-17 number, mislabelled upstream.
     get crore() { return this.usd.map(v => Math.round(v * 1e9 * FX.USD / 1e7)); },
-    chinaSharePct: 93.3, valueGrowthPct: 43.9, volumeGrowthPct: 75.1,
-    fy30LowUsd: 14, fy30HighUsd: 23
+    // India reports this line in PIECES, not tonnes. The tonnage that circulates is a
+    // UN Comtrade modelled estimate, so no per-kilogram price trend can be read off it.
+    chinaSharePct: 93.3, valueGrowthPct: 43.9, piecesGrowthPct: 11.7,
+    fy30LowUsd: 13.6, fy30HighUsd: 23
   },
   indiaPli: { targetGWh: 50, awardedGWh: 40, builtGWh: 1.4, builtPct: 2.8,
-              actualQ3MWh: 1.9, outlayCrore: 18100, disbursedCrore: 0,
+              actualQ3MWh: 7,   // 72,418 cells at 93 to 100 Wh each outlayCrore: 18100, disbursedCrore: 0,   // confirmed in a Lok Sabha reply reported 21 Jul 2026; milestones
+  // were then pushed out about two years on 12 Aug 2026, Ola's 20 GWh now running to 2031
               dutyFreeMachines: 85, dutyFreeUntil: '31 March 2029' },
   indiaDemand: { y2025GWh: 28, low2030GWh: 115, high2030GWh: 272 }
 };

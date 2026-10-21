@@ -12,7 +12,7 @@ const NOTES = [
       "<b>Set the clock.</b> Sixteen slides, about eighteen minutes, and everything deeper is in the PDF. CEOs relax when they know the shape.",
       "<b>Do not read the title.</b> He can read. Use the time to say why you picked this company: it is the clearest live test of the only European battery strategy that has not yet failed."
     ],
-    "ask": "\"Why this company?\" Because it is small enough to understand completely, and because its strategy is the opposite of the one that destroyed ₹1.6 lakh crore in Europe. It is a controlled experiment."
+    "ask": "\"Why this company?\" Because it is small enough to understand completely, and because its strategy is the opposite of the one that destroyed ₹1.5 lakh crore in Europe. It is a controlled experiment."
   },
   {
     "time": "0:45 - 3:00",
@@ -20,8 +20,8 @@ const NOTES = [
     "points": [
       "<b>Lead with the date and let it sit.</b> China's export controls on cells above 300 Wh/kg, graphite anode material, and battery production equipment are not cancelled. They are suspended to 10 November 2026. If he pushes: there are reports of an extension into January 2027, but I could not find the numbered instrument, and either way it is a suspension with an expiry date rather than a repeal.",
       "<b>Make it his problem, not a geopolitics lecture:</b> every Indian cell plant being built today runs on Chinese licensed process technology, Chinese machines and Chinese commissioning engineers. All three sit inside that regime.",
-      "<b>98% anode:</b> the point is that the chokepoint is processing, not mining. Buying a lithium mine does not fix it.",
-      "<b>₹1.6 lakh crore:</b> this is the base rate. Any European battery proposal he sees has to clear it.",
+      "<b>98% graphitisation:</b> the point is that the chokepoint is processing, not mining. Buying a lithium mine does not fix it.",
+      "<b>₹1.5 lakh crore:</b> this is the base rate. Any European battery proposal he sees has to clear it.",
       "<b>116x:</b> flag it now, promise to prove it on slide 9. That creates anticipation and signals you did real work rather than repeating a press release.",
       "<b>₹38,900 crore:</b> his number. India's import bill, up 44% in a year.",
       "<b>Then the callout.</b> Read it almost verbatim. It is the thesis of the whole deck: Europe lost on scale, the survivors won on specialisation, UniverCell is the cleanest live test."
@@ -44,7 +44,7 @@ const NOTES = [
     "time": "5:00 - 6:45",
     "say": "Everyone talks about China and lithium. China's hold is not on the ground. It is on the step between the mine and the cell.",
     "points": [
-      "<b>Walk the bars top down.</b> 98% of anode material, 94% of battery-grade graphite, 90% of cathode, 85% of cell capacity. Then the bottom bar: only about 16% of lithium mining. That contrast is the whole slide.",
+      "<b>Walk the bars top down.</b> 94% of graphite refining, over 90% of anode material, 85% of cathode, over 80% of cells. Then the bottom bar: only about 17% of lithium mining. That contrast is the whole slide.",
       "<b>Drive it home:</b> you can buy a mine in Australia or Argentina and still have to ship the output to China to make it useful. Processing is the chokepoint.",
       "<b>Concentration rose, it did not fall:</b> 82% in 2020 to 86% in 2024, right through the entire Western diversification effort. That is the uncomfortable fact.",
       "<b>2035 is barely better</b> on the IEA's own current-policy projection: still over 60% of refined lithium and cobalt, still around 80% of battery-grade graphite.",
@@ -56,7 +56,7 @@ const NOTES = [
     "time": "6:45 - 8:30",
     "say": "Now the trade flows, because the buyer list has rearranged in a way most people have not noticed.",
     "points": [
-      "<b>Top chart, lead with Germany.</b> ₹2.7 lakh crore, the largest importer in the world, and it overtook the United States in May 2025. That usually surprises people who assume the US is the big buyer.",
+      "<b>Top chart, lead with Germany.</b> ₹2.7 lakh crore, the largest importer in the world, and it has been ahead of the United States since 2023. That usually surprises people who assume the US is the big buyer.",
       "<b>The US is leaving the market, not winning it.</b> China's exports to the US fell from ₹1.5 lakh crore to ₹1.1 lakh crore and China's share of US imports fell from 65% to 46%. That is tariffs working as intended.",
       "<b>But the volume did not disappear.</b> It went to Europe, Australia, India and Vietnam. Europe absorbed the diversion: ₹3 lakh crore, 40% of China's exports.",
       "<b>India is the fastest-growing destination of all</b>, up 73% in twelve months on China's own export books. When the US closes a door, the volume lands on him.",
@@ -154,7 +154,7 @@ const NOTES = [
     "points": [
       "<b>Define the segment first,</b> out loud. European custom and specialty cells and merchant electrodes for qualification-locked applications. Explicitly not commodity EV cells.",
       "<b>The orange bars are the niche, the blue are the commodity market.</b> The shape difference is the insight: 2.8 average against 4.2. Same industry, completely different economics.",
-      "<b>Supplier power is the one brutal force in both, at 4,</b> and it is the one UniverCell cannot fix. 90% of cathode, 98% of anode, under a licensing regime. The sodium-ion work with Litona is the only visible hedge.",
+      "<b>Supplier power is the one brutal force in both, at 4,</b> and it is the one UniverCell cannot fix. 85% of cathode and over 90% of anode material, under a licensing regime. The sodium-ion work with Litona is the only visible hedge.",
       "<b>Rivalry collapsed to 3 by attrition,</b> not by strategy. Seven peers exited in eighteen months. Be honest that this is survivorship.",
       "<b>The sharpest line on the slide:</b> the real competitor is not CATL, it is Molicel. Same size, same high-drain 21700, same eVTOL and drone customers, already signed to Archer and Vertical Aerospace. Any deck that benchmarks this company against CATL is flattering and useless.",
       "<b>Buyers are weak precisely because qualification locks them in.</b> Once a cell is designed into a satellite or a surgical tool, switching means requalifying. That is the economic moat in this niche, and it is also why revenue takes years to arrive.",
@@ -193,7 +193,7 @@ const NOTES = [
     "time": "22:15 - 24:00",
     "say": "So what is this actually worth to you. Four plays, in order of how cheaply you could test them.",
     "points": [
-      "<b>Open with his number.</b> ₹38,900 crore of cell imports in calendar 2025, up 44% by value and 75% by volume, about 93% from China. India is absorbing the price collapse, not escaping the dependence.",
+      "<b>Open with his number.</b> ₹38,900 crore of cell imports in calendar 2025, up 44% by value against 12% by the pieces India actually reports, about 93% from China. Value is outrunning volume, which is a shift to bigger cells and packs, not a price collapse being absorbed.",
       "<b>The PLI tile is the uncomfortable one.</b> 1.4 GWh commissioned against a 50 GWh target, and nothing disbursed. Say it neutrally, as a fact, not a criticism of policy.",
       "<b>Play one is the sharpest and I would spend most of the time here.</b> Chinese LFP cathode technology now needs Beijing's approval to transfer. European dry-coating process technology does not. Dürr and LiCAP have a validated platform and no pilot host. And the coater itself lands in India at zero basic customs duty until 31 March 2029 under this year's notification. Cheap, fast and time-bound.",
       "<b>Play two is the one that fits the evidence best.</b> Electrode coating is where UniverCell actually makes money, there is almost no merchant electrode supply in Europe, and the same gap exists in India at far larger scale. It is a fraction of the capital of a cell plant and it serves every cell maker rather than competing with them.",

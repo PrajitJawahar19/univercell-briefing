@@ -1,4 +1,4 @@
-# UniverCell Holding GmbH — a briefing
+# UniverCell Holding GmbH: a briefing
 
 A 16-slide board briefing on **UniverCell Holding GmbH** (Flintbek, Germany) and the
 global battery industry, written for an Indian audience. All money is shown in rupees.
@@ -13,7 +13,7 @@ from a local copy. No build step, no dependencies, and it works offline.
 | **N** | show the speaker notes under the slide |
 | **T** | switch between the light and dark versions |
 | **F** | full screen |
-| 1–9 | jump to a slide |
+| 1 to 9 | jump to a slide |
 | Esc | close any panel |
 
 Click the right-hand side of a slide to advance, the far left to go back, or swipe on a phone.
